@@ -30,7 +30,7 @@ extern {
     ///
     ///Return pointer to read-only ad_rec_t structure if successful, NULL
     ///otherwise.
-    pub fn ad_open_dev(device_name: *const c_char, samples_per_sec: i32) -> *const ad_rec_t;
+    pub fn ad_open_dev(device_name: *const c_char, samples_per_sec: u32) -> *const ad_rec_t;
 
     ///Open the default audio device with a given sampling rate.
     ///
@@ -41,7 +41,7 @@ extern {
     ///
     ///Return pointer to read-only ad_rec_t structure if successful, NULL
     ///otherwise.
-    pub fn ad_open_sps(samples_per_sec:i32) -> *const ad_rec_t;
+    pub fn ad_open_sps(samples_per_sec:u32) -> *const ad_rec_t;
 
     ///Open the default audio device.
     ///
@@ -81,5 +81,5 @@ extern {
     ///
     ///Return # samples actually read (could be 0 since non-blocking); AD_EOF if not
     ///recording and no more samples remaining to be read from most recent recording.
-    pub fn ad_read(dev: *const ad_rec_t, buf:*mut i16, max:i32) -> i32;
+    pub fn ad_read(dev: *const ad_rec_t, buf:*mut i16, max:u32) -> i32;
 }
