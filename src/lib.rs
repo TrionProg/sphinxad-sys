@@ -8,16 +8,12 @@ pub struct ad_rec_t(c_void);
 ///Uses for ad_open function
 pub const DEFAULT_SAMPLES_PER_SEC:i32 =	16000;
 
-///Return codes
-pub enum ReturnCode{
-    Ok=0,
-    ErrGen=-1,
-    ErrNotOpen=-2,
-    ErrWave=-3,
-}
 
-///EOF Return code
+pub const AD_OK:i32 =           0;
 pub const AD_EOF:i32 =	      	-1;
+pub const AD_ERR_GEN:i32 =      -1;
+pub const AD_ERR_NOT_OPEN:i32 = -2;
+pub const AD_ERR_WAVE:i32 =     -3;
 
 #[link(name = "sphinxad")]
 extern {

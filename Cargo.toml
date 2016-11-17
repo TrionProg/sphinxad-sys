@@ -1,6 +1,6 @@
 [package]
 name = "sphinxad-sys"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["trionprog <trionprog@gmail.com>"]
 description = "Sphinxad low-level wrapper, that allows to read data from microphone"
 homepage = "https://github.com/TrionProg/sphinxad-sys"
@@ -8,6 +8,8 @@ repository = "https://github.com/TrionProg/sphinxad-sys"
 readme = "README.md"
 keywords = ["sphinx", "cmusphinx", "microphone"]
 license-file = "LICENSE"
+documentation = "https://docs.rs/sphinxad-sys/0.1.1/sphinxad_sys/"
+license = "MIT"
 
 [dependencies]
 libc = "0.2.0"

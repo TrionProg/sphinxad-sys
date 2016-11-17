@@ -13,7 +13,7 @@ use std::ptr;
 
 use sphinxad_sys::*;
 
-const SPHINX_FREQ:u32=16000; //sphinx want 16hHz
+const SPHINX_FREQ:u32=16000; //sphinx want 16kSPS
 
 fn main(){
     //specify wav file
