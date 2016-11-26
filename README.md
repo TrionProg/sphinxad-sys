@@ -9,12 +9,17 @@ In order to use the this crate, you must have the `libpocketsphinx`, `libsphinxa
 Usage
 -----
 
+Cargo.toml
+```
+sphinxad-sys = "*"
+```
+
 Look at file "read microphone and write to wav file.rs" from examples directory, it contains everything you need.
 
 Documentation
 -------------
 
-* [sphinxad-sys documentation](https://docs.rs/sphinxad-sys/0.1.1/sphinxad_sys/)
+* [sphinxad-sys documentation](https://docs.rs/sphinxad-sys/0.1.2/sphinxad_sys/)
 
 Since `sphinxad-sys` does nothing more than export symbols from the native `libsphinxad` library, the best source for help is the information already available for the *cmusphinx* project:
 
@@ -23,7 +28,7 @@ Since `sphinxad-sys` does nothing more than export symbols from the native `libs
 Advice
 ------
 
-You can use this library with horrible C-like style with [pocketsphinx](https://github.com/kriomant/pocketsphinx-sys) by this [examples](https://github.com/cmusphinx/pocketsphinx/blob/master/src/programs/continuous.c#L233), or by hight-level library with [pocketsphinx-rs](https://github.com/kriomant/pocketsphinx-rs)
+You can use this library with horrible C-like style with [pocketsphinx](https://github.com/kriomant/pocketsphinx-sys) by this [examples](https://github.com/cmusphinx/pocketsphinx/blob/master/src/programs/continuous.c#L233), or by hight-level library with [pocketsphinx-rs](https://github.com/kriomant/pocketsphinx-rs) ( hight-level [sphinxad-rs](https://github.com/TrionProg/sphinxad-rs) is recommended ).
 
 License
 -------
