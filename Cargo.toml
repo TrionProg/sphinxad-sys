@@ -9,10 +9,11 @@ readme = "README.md"
 keywords = ["sphinx", "cmusphinx", "microphone"]
 license-file = "LICENSE"
 documentation = "https://docs.rs/sphinxad-sys/0.1.2/sphinxad_sys/"
-license = "MIT"
+build = false
 
 [dependencies]
 libc = "0.2.0"
 
 [build-dependencies]
 pkg-config = "0.3.9"
+
